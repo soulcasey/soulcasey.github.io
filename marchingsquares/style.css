@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #11152c; /* Dark navy background */
+    color: white; /* White text */
+}
+
+header {
+    background-color: black; /* Slightly lighter navy for the header */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px; /* Limit content width */
+    margin: 0 auto; /* Center content horizontally */
+    line-height: 1.6; /* Improve readability */
+    color: white; /* Ensure text stays white */
+}
+
+section {
+    margin-bottom: 40px; /* Add spacing between sections */
+}
+
+section h2 {
+    color: white; /* Light blue for section titles */
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+section p, ul {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #4db8ff; /* Light blue links */
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.image-card {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black; /* Matches the header */
+    color: white;
+}
