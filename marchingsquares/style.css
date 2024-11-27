@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #11152c; /* Dark navy background */
-    color: white; /* White text */
+    background-color: #11152c;
+    color: white;
 }
 
 header {
-    background-color: black; /* Slightly lighter navy for the header */
+    background-color: black;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -15,10 +15,10 @@ header {
 
 main {
     padding: 20px;
-    max-width: 800px; /* Limit content width */
-    margin: 0 auto; /* Center content horizontally */
-    line-height: 1.6; /* Improve readability */
-    color: white; /* Ensure text stays white */
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: white;
 }
 
 section {
@@ -26,7 +26,7 @@ section {
 }
 
 section h2 {
-    color: white; /* Light blue for section titles */
+    color: white;
     margin-bottom: 10px;
     text-decoration: underline;
 }
@@ -40,9 +40,12 @@ ul {
     padding-left: 20px;
 }
 
-ul li a {
-    text-decoration: none;
-    color: #4db8ff; /* Light blue links */
+a:hover {
+    text-decoration: underline; /* Keep underline effect on hover */
+}
+
+a:visited {
+    color: inherit; /* Prevent the visited link from turning purple */
 }
 
 ul li a:hover {
@@ -58,18 +61,21 @@ ul li a:hover {
 
 .image-card {
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
-img {
-    width: 300px;
-    height: auto;
+
+.image-card img {
+    width: 300px; 
+    max-width: 100%; 
+    height: auto; 
     border-radius: 10px;
-    margin-bottom: 10px;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: black; /* Matches the header */
+    background-color: black;
     color: white;
 }
