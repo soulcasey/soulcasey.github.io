@@ -41,15 +41,11 @@ ul {
 }
 
 a:hover {
-    text-decoration: underline; /* Keep underline effect on hover */
-}
-
-a:visited {
-    color: inherit; /* Prevent the visited link from turning purple */
-}
-
-ul li a:hover {
     text-decoration: underline;
+}
+
+a {
+    color: white;
 }
 
 .gallery {
