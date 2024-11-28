@@ -6,9 +6,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 900px; /* Reduced the max-width for a more compact layout */
+  max-width: 700px; /* Reduced the max-width for a more compact layout */
   margin-left: auto;
   margin-right: auto;
+}
+
+.blue-name {
+  color: #00b7ff; 
+  font-weight: bold;
 }
 
 /* Header Section */
@@ -85,7 +90,7 @@ header p {
 
 .featured-link {
   color: #00b7ff; /* Matches the theme color */
-  font-size: 20px; /* Adjust the size of the icon */
+  font-size: 30px; /* Adjust the size of the icon */
   margin-left: 10px; /* Space between icon and text */
   transition: color 0.3s ease, transform 0.3s ease;
   text-decoration: none; /* Remove underline */
