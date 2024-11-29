@@ -94,7 +94,7 @@ header p {
 
 .featured-link {
   color: #00b7ff; /* Matches the theme color */
-  font-size: 30px; /* Adjust the size of the icon */
+  font-size: 38px; /* Adjust the size of the icon */
   margin-left: 10px; /* Space between icon and text */
   transition: color 0.3s ease, transform 0.3s ease;
   text-decoration: none; /* Remove underline */
