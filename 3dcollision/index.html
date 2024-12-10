@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Collision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NJIT IT 360 - 3D Collision</h1>
+    </header>
+    <main>
+        <section class="introduction">
+            <h2>Introduction</h2>
+            <p>
+                This project leverages object collision, a key concept covered in the IT 360 course, within a 3D environment. It simulates multiple spheres, each with random sizes, velocities, and colors, which are generated within a cube. The spheres move and interact with each other and the walls of the cube, bouncing off surfaces and colliding with one another, demonstrating realistic physics and collision response in a 3D space.
+            </p>
+        </section>
+
+        <section class="explanation">
+            <h2>Explanation</h2>
+            <p>
+                The collision algorithm for circles uses the radii of the two circles to determine if they are colliding. If the distance between the centers of the two circles is equal to or less than the sum of their radii, then a collision is detected.
+            </p>
+            <div class="image-card">
+                <img src="Distance.png">
+            </div>
+            <p>
+                Once a collision is detected, the circles need to be moved apart to prevent overlap. The circles will be displaced in the direction away from each other, based on the current collision distance. A crucial aspect of this process is that each circle's movement is proportional to the other circle's radius. This ensures that the push distance is relative to the size of each circle, maintaining a stable and realistic separation between the two.
+            </p>
+            <div class="image-card">
+                <img src="Push.png">
+            </div>
+            <p>
+                To simulate the spheres within the cube, they need to bounce off the cube's boundaries when they reach the edges. When any edge of a sphere exceeds the cube’s boundary, its velocity will be reversed along the corresponding axis. This creates a bounce effect, where the sphere will reflect off the wall and change direction based on the axis it has exceeded. The sphere will continue moving with the updated velocity until it touches another boundary of the cube. 
+            </p>
+            <div class="image-card">
+                <img src="Bounce.png">
+            </div>
+            <p>
+                Another concept in this simulation is simulating an explosion. When an explosion occurs, each sphere will be assigned a new velocity directed away from the explosion's epicenter. The speed of this new velocity will depend on the distance between the sphere and the explosion — the closer the sphere is to the explosion, the faster the blast will affect its new velocity. Over time, each sphere will experience a recovery rate, gradually returning to its original speed but maintaining the new direction imparted by the explosion.
+            </p>
+            <div class="image-card">
+                <img src="Explosion.png">
+            </div>
+        </section>
+
+        <section class="demo">
+            <h2>Demo</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="Demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="image-card">
+                <a href="https://github.com/soulcasey/IT-360-Final" target="_blank">
+                    <img src="GitHub.png" style="width: 80px;">
+                    <p>Click icon for link</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="presentation">
+            <h2>Presentation</h2>
+            <div class="image-card">
+                <a href="https://docs.google.com/presentation/d/1ytzuev_AvQBE3ejvibC1D7DkZGBOpK3Y25nT074Xt4Y/edit#slide=id.p" target="_blank">
+                    <img src="GoogleSlides.png" style="width: 80px;">
+                    <p>Click icon for link</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Kyuung Casey Cha, 2024</p>
+    </footer>
+</body>
+</html>
