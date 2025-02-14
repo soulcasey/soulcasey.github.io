@@ -190,3 +190,20 @@ header p {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.changing-text-container {
+  display: inline-flex;
+  width: 120px;
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  overflow: hidden;
+}
+
+.changing-text {
+  font-weight: bold;
+  font-size: 25px;
+  color: #00b7ff; ;
+  transition: opacity 0.5s ease-in-out;
+  white-space: nowrap;
+}
