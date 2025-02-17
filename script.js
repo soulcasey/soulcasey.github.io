@@ -12,4 +12,8 @@ function changeText() {
     }, 500);
 }
 
-setInterval(changeText, 3000); // Change every 2 seconds
+// First change after 0.5 seconds
+setTimeout(() => {
+    changeText();
+    setInterval(changeText, 2500); // Then every 2.5 seconds
+}, 1000);

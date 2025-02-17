@@ -92,18 +92,12 @@ header p {
   color: gray;
 }
 
-.featured-link {
+.work-skill-icon {
   color: #00b7ff; /* Matches the theme color */
   font-size: 38px; /* Adjust the size of the icon */
   margin-left: 10px; /* Space between icon and text */
-  transition: color 0.3s ease, transform 0.3s ease;
   text-decoration: none; /* Remove underline */
   align-self: center;
-}
-
-.featured-link:hover {
-  color: white; /* Change color on hover */
-  transform: scale(1.2); /* Enlarge slightly on hover */
 }
 
 .contact-info {
@@ -189,6 +183,11 @@ header p {
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.035); /* Enlarge slightly on hover */
 }
 
 .changing-text-container {
