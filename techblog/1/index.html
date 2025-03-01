@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Performance Optimization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NJIT IT 383 - VR Peformance Optimization</h1>
+    </header>
+    <main>
+        <section class="introduction">
+            <h2>Why is Performance Important in VR Games?</h2>
+            <p>Of course, performance is important in any video game—or any software, for that matter. No one wants to lose a 1v1 deathmatch due to lag.</p>
+            <p>However, in VR, it’s even more critical. Not only does poor performance break immersion, which is the core purpose of VR, but it can also cause motion sickness by creating a mismatch between physical movements and on-screen visuals.</p>
+            <div class="image-card">
+                <img src="Lag.png">
+            </div>
+            <p>To ensure a smooth and comfortable experience, Meta recommends developers target a 90Hz frame rate on Quest headsets, with 120Hz support in experimental settings. Achieving and maintaining this frame rate requires careful optimization.</p>
+            <div class="image-card">
+                <img src="Fps.png">
+            </div>
+        </section>
+
+        <section class="explanation" style="margin-top: 100px;">
+            <h2>Performance Optimization Techniques</h2>
+            <h3>
+                1. Asynchronous Timewarp (ATW) & Spacewarp (ASW)
+            </h3>
+            <p>
+                Asynchronous Timewarp (ATW) and Asynchronous Spacewarp (ASW) are VR-specific techniques that help smooth out performance fluctuations. ATW reduces judder by re-projecting the last rendered frame if a new one is delayed, while ASW generates interpolated frames when performance drops below the target frame rate, ensuring a smoother experience.
+            </p>
+            <div class="image-card">
+                <img src="Timewarp.png">
+            </div>
+            <p>
+                It's important to note that these techniques do not directly improve a game's performance. Instead, they generate additional frames to maintain fluid gameplay, masking performance dips rather than increasing actual rendering speed.
+            </p>
+
+            <h3 style="margin-top: 100px;">
+                2. Foveated Rendering
+            </h3>
+            <p>
+                Foveated rendering improves performance by reducing the rendering quality of areas outside the player's focus. Since the human eye perceives sharp details only at the center of vision, VR headsets with eye tracking can prioritize high-quality rendering where the player is looking while lowering the quality in peripheral areas. This technique reduces GPU workload without a noticeable drop in visual fidelity.
+            </p>
+            <div class="image-card">
+                <img src="foveated.png">
+            </div>
+            <p>
+                Unforunately, not all VR headsets support foveated rendering, as it requires built-in eye-tracking capabilities. Some examples of headsets that do support this feature include the Meta Quest Pro and HTC Vive Pro Eye.
+            </p>
+
+            <h3 style="margin-top: 100px;">
+                3. Object Pooling
+            </h3>
+            <p>
+                Object pooling isn't a VR specific technique, and it involves reusing objects instead of constantly creating and destroying them. This technique is especially useful for bullets, enemies, and particle effects, which are frequently spawned and removed.
+            </p>
+            <div class="image-card">
+                <img src="Pool.png">
+            </div>
+            <p>
+                Creating and destroying objects repeatedly can cause CPU overhead and memory fragmentation, leading to performance drops. Pre-allocating objects and reusing them reduces memory allocation costs and improves efficiency.
+            </p>
+
+            <h3 style="margin-top: 100px;">
+                4. Level of Detail (LOD)
+            </h3>
+            <p>
+                Level of Detail reduces the complexity of 3D models based on their distance from the player. Objects that are far away do not need to be rendered with high detail, so VR engines can dynamically switch to lower-polygon versions of these models to save rendering resources.
+            </p>
+            <div class="image-card">
+                <img src="lod.png">
+            </div>
+            <p>
+                This technique is especially useful in VR because most VR games take place in 3D environments, where objects frequently appear at varying distances from the player.
+            </p>
+        </section>
+
+        <section class="summary" style="margin-top: 100px;">
+            <h2>
+                Summary
+            </h2>
+            <p>
+                Optimizing performance in VR games is essential for maintaining immersion and player comfort. While stunning visuals and engaging gameplay are great, true expertise lies in balancing performance and quality. These techniques will assist developers to achieve smooth, stable frame rates in their video games.
+            </p>
+            <div class="image-card">
+                <img src="superhot-vr.jpg">
+            </div>
+
+        </section>
+
+        <section class="resources" style="margin-top: 100px;">
+            <h2>Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://virtualspeech.com/blog/motion-sickness-vr" target="_blank">Motion Sickness in VR - Sophie Thompson</a>
+                </li>
+
+                <li>
+                    <a href="https://developers.meta.com/horizon/documentation/native/pc/dg-performance-opt-guide" target="_blank">VR Performance Optimization Guide - Meta</a>
+                </li>
+                
+                <li>
+                    <a href="https://medium.com/@lemapp09/beginning-game-development-vr-performance-8940bbc78a32" target="_blank">Beginning Game Development: VR Performance - Lem Apperson</a>
+                </li>
+
+                <li>
+                    <a href="https://www.uploadvr.com/reprojection-explained/" target="_blank">VR Timewarp, Spacewarp, Reprojection, And Motion Smoothing Explained - David Heaney</a>
+                </li>
+
+                <li>
+                    <a href="https://www.tobii.com/blog/what-is-foveated-rendering" target="_blank">What is foveated rendering? - Doug Eggert</a>
+                </li>
+
+                <li>
+                    <a href="https://medium.com/huawei-developers/object-pooling-a-design-pattern-for-games-in-unity-52bb29e2170f" target="_blank">Object Pooling: A Design Pattern for Games in Unity - Seyyid Yigit </a>
+                </li>
+
+                <li>
+                    <a href="https://thegamedev.guru/unity-gpu-performance/lod-level-of-detail/" target="_blank">Level of Detail (LOD) Tutorial for Unity 2021+ - Ruben Torres Bonet </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/soulcasey/" target="_blank">
+            <i class="fab fa-linkedin contact-icon"></i>
+        </a>
+        <a href="https://github.com/soulcasey/" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <p>&copy; Kyuung Casey Cha, 2025</p>
+    </footer>
+</body>
+</html>
