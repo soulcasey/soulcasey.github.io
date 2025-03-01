@@ -88,3 +88,8 @@ footer a {
     margin: 0 10px 0 0; /* Spacing between icons */
     font-size: 35px;
 }
+
+.blue-name {
+    color: #00b7ff; 
+    font-weight: bold;
+  }
