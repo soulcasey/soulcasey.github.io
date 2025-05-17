@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casey's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="project">
+        <div class="project-details">
+            <div class="project-title">
+                <h3>Low-Vision Rehabilitation Training</h3>
+            </div>
+            <div class="carousel-container" id="carousel">
+                <div class="carousel-track">
+                    <img src="image0.png" class="carousel-image" alt="Slide 1" />
+                    <img src="image1.png" class="carousel-image" alt="Slide 2" />
+                </div>
+
+                <button class="arrow prev">&#10094;</button>
+                <button class="arrow next">&#10095;</button>
+            </div>
+            <div class="carousel-dots" id="carousel-dots">
+                <span class="carousel-dot active" data-index="0"></span>
+                <span class="carousel-dot" data-index="1"></span>
+            </div>
+        </div>
+        <div class="tech-stack">
+            <span class="tech-item"><span class="dot white"></span>Unity</span>
+            <span class="tech-item"><span class="dot purple"></span>C#</span>
+            <span class="tech-item"><span class="dot white"></span>VBA</span>
+        </div>
+
+        <div class="project-links">
+            <a href="https://sites.google.com/njit.edu/nih-low-rehab/home" target="_blank" class="project-link">
+                <i class="fas fa-globe"></i>
+                <span>Website</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <p>
+            Graduate research project at <span class="blue-name">NJIT’s MIXR Lab</span> that leveraged Virtual Reality for Low-Vision Rehabilitation Training, aiming to improve orientation and mobility skills in a safe, controlled environment.
+        </p>
+        <p>
+            Developed collaboratively in a team of three, including a Ph.D. candidate and a Master’s student.
+        </p>
+        <p>Primary Contributions:</p>
+        <ul>
+            <li>Programmed realistic NPC behavior to simulate real-world pedestrian environments</li>
+            <li>Designed and developed street-crossing maps aligned with key research objectives</li>
+            <li>Implemented data logging to capture user interaction patterns for graduate analysis</li>
+            <li>Collaborated with graduate researchers to refine simulation goals and test scenarios</li>
+        </ul>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

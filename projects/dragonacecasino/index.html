@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casey's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="project">
+        <div class="project-details">
+            <div class="project-title">
+                <h3>Dragon&nbsp;Ace Casino</h3>
+            </div>
+            <div class="carousel-container" id="carousel">
+                <div class="carousel-track">
+                    <img src="image0.png" class="carousel-image" alt="Slide 1" />
+                    <img src="image1.png" class="carousel-image" alt="Slide 2" />
+                    <img src="image2.png" class="carousel-image" alt="Slide 3" />
+                    <img src="image3.png" class="carousel-image" alt="Slide 4" />
+                    <img src="image4.png" class="carousel-image" alt="Slide 5" />
+                </div>
+
+                <button class="arrow prev">&#10094;</button>
+                <button class="arrow next">&#10095;</button>
+            </div>
+            <div class="carousel-dots" id="carousel-dots">
+                <span class="carousel-dot active" data-index="0"></span>
+                <span class="carousel-dot" data-index="1"></span>
+                <span class="carousel-dot" data-index="2"></span>
+                <span class="carousel-dot" data-index="3"></span>
+                <span class="carousel-dot" data-index="4"></span>
+            </div>
+        </div>
+        <div class="tech-stack">
+            <span class="tech-item"><span class="dot white"></span>Unity</span>
+            <span class="tech-item"><span class="dot purple"></span>C#</span>
+            <span class="tech-item"><span class="dot white"></span>Socket.IO</span>
+            <span class="tech-item"><span class="dot pink"></span>UniRx</span>
+            <span class="tech-item"><span class="dot green"></span>Node.js</span>
+            <span class="tech-item"><span class="dot red"></span>Jenkins</span>
+        </div>
+
+        <div class="project-links">
+            <a href="https://www.dragonacecasino.com/" target="_blank" class="project-link">
+                <i class="fas fa-globe"></i>
+                <span>Website</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.gamespring.dac&hl=en&gl=US" target="_blank" class="project-link">
+                <i class="fab fa-google-play"></i>
+                <span>Play&nbsp;Store</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="https://apps.apple.com/us/app/baccarat-dragon-ace-casino/id1300001920" target="_blank" class="project-link">
+                <i class="fab fa-apple"></i>
+                <span>App&nbsp;Store</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <p>
+            <span class="blue-name">Dragon Ace Casino</span> is a cross-platform multiplayer mobile casino game developed at <span class="blue-name">GameSpring</span> that unifies multiple casino titles into a single application, achieving 1,000,000+ combined downloads.
+        </p>
+        <p>Primary Contributions:</p>
+        <ul>
+            <li>Released new slot games including <span class="blue-name">Fortune Treasure</span>, <span class="blue-name">Liberty Spins</span>, and <span class="blue-name">God of Wealth</span></li>
+            <li>Refactored legacy code into a modern, object-oriented architecture</li>
+            <li>Designed Socket.IO-based client/server network communication flows</li>
+            <li>Optimized algorithmic logic, multi-object spawning, and high-vertex rendering</li>
+            <li>Researched and integrated external libraries such as WebView and cheat detection</li>
+            <li>Managed Jenkins based CI/CD pipeline</li>
+        </ul>
+        <p>Notable Achievements:</p>
+        <ul>
+            <li>Reduced new game release cycle from 1.5 years to 4 months by refactoring core systems for scalability and establishing release guidelines</li>
+            <li>Fully automated Jenkins DevOps pipeline, cutting monthly Xcode build failure rates from 30% to 0%</li>
+            <li>Optimized slot engine network, reducing server bottlenecks and cutting packet size by 50%</li>
+        </ul>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casey's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="project">
+        <div class="project-details">
+            <div class="project-title">
+                <h3>Astronaut Shooter</h3>
+            </div>
+            <div class="carousel-container" id="carousel">
+                <div class="carousel-track">
+                    <img src="image0.png" class="carousel-image" alt="Slide 1" />
+                    <img src="image1.png" class="carousel-image" alt="Slide 2" />
+                    <img src="image2.png" class="carousel-image" alt="Slide 3" />
+                </div>
+
+                <button class="arrow prev">&#10094;</button>
+                <button class="arrow next">&#10095;</button>
+            </div>
+            <div class="carousel-dots" id="carousel-dots">
+                <span class="carousel-dot active" data-index="0"></span>
+                <span class="carousel-dot" data-index="1"></span>
+                <span class="carousel-dot" data-index="2"></span>
+            </div>
+        </div>
+        <div class="tech-stack">
+            <span class="tech-item"><span class="dot white"></span>Unity</span>
+            <span class="tech-item"><span class="dot purple"></span>C#</span>
+        </div>
+
+        <div class="project-links">
+            <a href="https://github.com/soulcasey/Astronaut-shooting-game" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=RGlhSadZQXs" target="_blank" class="project-link">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1tyoXaGGc2kqg_VH3FIUqsc3FA9e6F5rP?usp=sharing" target="_blank" class="project-link">
+                <i class="fab fa-google-drive"></i>
+                <span>Download</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <p>
+            My first video game project — a fast-paced third-person shooting survival game where an astronaut avoids randomly spawned obstacles and a chasing robot while collecting hearts to stay alive.
+        </p>
+        <p>
+            The game is continuously updated with modernized code and enhanced mechanics.
+        </p>
+        <p>Key Learnings:</p>
+        <ul>
+            <li>Bullet shooting mechanics using raycasting for precise aiming</li>
+            <li>Object pooling to efficiently manage multiple spawned objects</li>
+            <li>OOP principles to enhance modularity and maintainability</li>
+            <li>Asset management to organize and optimize game resources</li>
+        </ul>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

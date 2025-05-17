@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casey's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="project">
+        <div class="project-details">
+            <div class="project-title">
+                <h3>Pokemon Classifier</h3>
+            </div>
+            <div class="carousel-container" id="carousel">
+                <div class="carousel-track">
+                    <img src="image0.png" class="carousel-image" alt="Slide 1" />
+                    <img src="image1.png" class="carousel-image" alt="Slide 2" />
+                    <img src="image2.png" class="carousel-image" alt="Slide 3" />
+                    <img src="image3.png" class="carousel-image" alt="Slide 4" />
+                </div>
+
+                <button class="arrow prev">&#10094;</button>
+                <button class="arrow next">&#10095;</button>
+            </div>
+            <div class="carousel-dots" id="carousel-dots">
+                <span class="carousel-dot active" data-index="0"></span>
+                <span class="carousel-dot" data-index="1"></span>
+                <span class="carousel-dot" data-index="2"></span>
+                <span class="carousel-dot" data-index="3"></span>
+            </div>
+        </div>
+        <div class="tech-stack">
+            <span class="tech-item"><span class="dot orange"></span>PyTorch</span>
+            <span class="tech-item"><span class="dot yellow"></span>Python</span>
+            <span class="tech-item"><span class="dot green"></span>CUDA</span>
+        </div>
+
+        <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/1QOAsNTf8mvTOtc1SsVpGsW6fWHHWRHhl" target="_blank" class="project-link">
+                <i class="fab fa-google-drive"></i>
+                <span>Dataset</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="https://github.com/soulcasey/pokemon-classifier" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <p>
+            <span class="blue-name">Pokemon Classifier</span> is a computer vision model developed as part of <span class="blue-name">NJIT’s Machine Learning course</span>. Trained on over 3,000 images of the original 151 first-generation Pokémon, the model identifies Pokemon in real time using a camera feed and classifies them by name.
+        </p>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
