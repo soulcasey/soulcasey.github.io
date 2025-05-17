@@ -39,7 +39,6 @@ dots.forEach(dot => {
 		clearInterval(autoSlide);
 		index = +dot.dataset.index;
 		updateCarousel();
-		autoSlide = setInterval(showNext, interval);
 	});
 });
 
@@ -58,8 +57,10 @@ carousel.addEventListener('touchend', e => {
 	const deltaX = endX - startX;
 
 	if (deltaX > 50) {
+		clearInterval(autoSlide);
 		showPrev();
 	} else if (deltaX < -50) {
+		clearInterval(autoSlide);
 		showNext();
 	}
 });
