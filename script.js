@@ -33,24 +33,36 @@ cards.forEach(card => {
 			modal.style.opacity = '1';
 
 			document.body.style.overflow = 'hidden'; // disable background scroll
+			history.pushState({ modalOpen: true }, '');
 		}, 50);
 	});
 });
 
-closeBtn.addEventListener('click', () => {
+function closeModal() {
 	modal.style.opacity = '0';
 	modal.style.visibility = 'hidden';
-
-	document.body.style.overflow = ''; // restore scroll
+	document.body.style.overflow = '';
 	setTimeout(() => {
 		embed.src = '';
-	}, 250); // wait for fade to complete
-});
+	}, 250);
 
-// Optional: Close modal when clicking outside content
+	// If modal was opened via history, go back to clean up state
+	if (history.state && history.state.modalOpen) {
+		history.back();
+	}
+}
+
+closeBtn.addEventListener('click', closeModal);
+
 window.addEventListener('click', (e) => {
 	if (e.target === modal) {
-		closeBtn.click();
+		closeModal();
+	}
+});
+
+window.addEventListener('popstate', (e) => {
+	if (modal.style.visibility === 'visible') {
+		closeModal();
 	}
 });
 
