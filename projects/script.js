@@ -68,3 +68,9 @@ carousel.addEventListener('touchend', e => {
 window.addEventListener('resize', () => {
 	updateCarousel(); // Recalculate on resize
 });
+
+
+const lang = new URLSearchParams(window.location.search).get('lang') || 'en';
+
+document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+document.querySelectorAll('.ko').forEach(el => el.style.display = lang === 'ko' ? 'block' : 'none');

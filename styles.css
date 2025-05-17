@@ -1,3 +1,11 @@
+.ko {
+	display: none;
+}
+
+.en {
+	display: block;
+}
+
 /* General Body Styles */
 body {
 	font-family: 'Poppins', sans-serif;
@@ -66,6 +74,72 @@ header p {
 	transition: opacity 0.5s ease-in-out;
 	white-space: nowrap;
 }
+
+
+
+.lang-toggle {
+	text-align: center;
+}
+
+.switch-label {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	/* center horizontally */
+	gap: 20px;
+	/* controlled spacing */
+	font-size: 1rem;
+	margin: 50px 0 50px 0;
+}
+
+.switch-label img {
+	width: 60px;
+	cursor: pointer;
+}
+
+.switch-wrapper {
+	position: relative;
+	align-items: center;
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+}
+
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #777;
+	transition: 0.4s;
+	border-radius: 24px;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 20px;
+	width: 20px;
+	left: 5px;
+	bottom: 5px;
+	background-color: white;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+/* When checked */
+.switch-wrapper input:checked+.slider {
+	background-color: #1e88e5;
+}
+
+.switch-wrapper input:checked+.slider:before {
+	transform: translateX(30px);
+}
+
+
 
 
 /* Project Section */

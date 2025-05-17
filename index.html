@@ -13,12 +13,26 @@
 
     <header>
         <img src="your-picture.jpg" alt="Casey Kyuung Cha">
-        <h1>Hi, my name is <span class="blue-name">Kyuung&nbsp;(Casey)&nbsp;Cha</span></h1>
-        <p>I am a <span class="changing-text-container"><span class="changing-text">Software</span></span> Engineer from New&nbsp;Jersey</p>
+        <h1 class="en">Hi, my name is <span class="blue-name">Kyuung&nbsp;(Casey)&nbsp;Cha</span></h1>
+        <h1 class="ko">안녕하세요, <span class="blue-name">차규웅 (케이시)</span> 입니다</h1>
+        <p class="en">I am a <span class="changing-text-container"><span class="changing-text">Software</span></span> Engineer from New&nbsp;Jersey</p>
+        <p class="ko">저는 뉴저지/서울에 사는 <span class="blue-name">소프트웨어 엔지니어</span> 입니다</p>
     </header>
 
+    <section class="lang-toggle">
+        <label class="switch-label">
+            <img src="usa.png">
+            <div class="switch-wrapper">
+                <input type="checkbox" id="translate"/>
+                <span class="slider"></span>
+            </div>
+            <img src="korea.png">
+        </label>
+    </section>
+
     <section class="projects">
-        <h2>Games <i class="fab fa-unity"></i></h2>
+        <h2 class="en">Games <i class="fab fa-unity"></i></h2>
+        <h2 class="ko">게임 <i class="fab fa-unity"></i></h2>
         <div class="project-grid">
             <div class="project-card" data-embed="projects/dragonacecasino/index.html">
                 <img src="projects/dragonacecasino/image0.png">
@@ -26,7 +40,8 @@
             </div>
             <div class="project-card" data-embed="projects/lowvisionrehab/index.html">
                 <img src="projects/lowvisionrehab/image0.png">
-                <p class="card-title">Low Vision Training</p>
+                <p class="card-title en">Low Vision Training</p>
+                <p class="card-title ko">저시력 가상현실 재활</p>
             </div>
             <div class="project-card" data-embed="projects/astronautshooter/index.html">
                 <img src="projects/astronautshooter/image0.png">
@@ -34,11 +49,13 @@
             </div>
         </div>
 
-        <h2>Web <i class="fas fa-globe"></i></h2>
+        <h2 class="en">Web <i class="fas fa-globe"></i></h2>
+        <h2 class="ko">웹 <i class="fas fa-globe"></i></h2>
         <div class="project-grid">
             <div class="project-card" data-embed="projects/musiclove/index.html">
                 <img src="projects/musiclove/image0.png">
-                <p class="card-title">Music Love Academy</p>
+                <p class="card-title en">Music Love Academy</p>
+                <p class="card-title ko">뮤직爱 학원</p>
             </div>
             <div class="project-card" data-embed="projects/unknownglory/index.html">
                 <img src="projects/unknownglory/image0.png">
@@ -46,15 +63,18 @@
             </div>
             <div class="project-card" data-embed="projects/screenshare/index.html">
                 <img src="projects/screenshare/image0.png">
-                <p class="card-title">ScreenShare</p>
+                <p class="card-title en">Screen Share</p>
+                <p class="card-title ko">화면 공유</p>
             </div>
         </div>
 
-        <h2>Software <i class="fas fa-code"></i></h2>
+        <h2 class="en">Program <i class="fas fa-code"></i></h2>
+        <h2 class="ko">프로그램 <i class="fas fa-code"></i></h2>
         <div class="project-grid">
             <div class="project-card" data-embed="projects/pokemonclassifier/index.html">
                 <img src="projects/pokemonclassifier/image0.png">
-                <p class="card-title">Pokemon Classifier</p>
+                <p class="card-title en">Pokemon Classifier</p>
+                <p class="card-title ko">포켓몬 머신러닝 분류</p>
             </div>
             <div class="project-card" data-embed="projects/marchingsquares/index.html">
                 <img src="projects/marchingsquares/image0.png">
@@ -72,28 +92,34 @@
     </div>
 
     <section class="work-experience">
-        <h2>Work Experience</h2>
+        <h2 class="en">Work Experience</h2>
+        <h2 class="ko">경력</h2>
         <div class="experience">
             <div class="job">
                 <img src="gamespring-icon.png" alt="GameSpring Logo" class="company-icon">
                 <div class="job-details">
-                    <h3>Software Engineer</h3>
-                    <p class="company-name">GameSpring</p>
+                    <h3 class="en">Software Engineer</h3>
+                    <h3 class="ko">프로그래머</h3>
+                    <p class="company-name en">GameSpring</p>
+                    <p class="company-name ko">(주)게임스프링</p>
                     <p class="timeline">Feb 2022 - Jul 2024</p>
                 </div>
             </div>
             <div class="job">
                 <img src="njit-icon.png" alt="NJIT Logo" class="company-icon">
                 <div class="job-details">
-                    <h3>VR Developer</h3>
-                    <p class="company-name">NJIT MIXR Lab</p>
+                    <h3 class="en">VR Developer</h3>
+                    <h3 class="ko">가상현실 연구원</h3>
+                    <p class="company-name en">NJIT MIXR Lab</p>
+                    <p class="company-name ko">뉴저지 공대 가상현실 연구소</p>
                     <p class="timeline">Aug 2021 - Jan 2022</p>
                 </div>
             </div>
             <div class="job">
                 <img src="instahub-icon.png" alt="InstaHub Logo" class="company-icon">
                 <div class="job-details">
-                    <h3>Software Engineer</h3>
+                    <h3 class="en">Software Engineer</h3>
+                    <h3 class="ko">소프트웨어 엔지니어</h3>
                     <p class="company-name">InstaHub</p>
                     <p class="timeline">May 2021 - Aug 2021</p>
                 </div>
@@ -101,15 +127,18 @@
             <div class="job">
                 <img src="njit-icon.png" alt="NJIT Logo" class="company-icon">
                 <div class="job-details">
-                    <h3>IT Technician</h3>
-                    <p class="company-name">NJIT IST Service Deck</p>
+                    <h3 class="en">IT Technician</h3>
+                    <h3 class="ko">IT 기술자</h3>
+                    <p class="company-name en">NJIT IST Service Deck</p>
+                    <p class="company-name ko">뉴저지 공대 IT 지원</p>
                     <p class="timeline">Dec 2019 - Mar 2020</p>
                 </div>
             </div>
             <div class="job">
                 <img src="masterklass-icon.png" alt="MasterKlass Logo" class="company-icon">
                 <div class="job-details">
-                    <h3>SAT Math II Teacher</h3>
+                    <h3 class="en">SAT Math II Teacher</h3>
+                    <h3 class="ko">SAT 수학 II 강사</h3>
                     <p class="company-name">MasterKlass</p>
                     <p class="timeline">Aug 2017 - Apr 2018</p>
                 </div>
@@ -118,7 +147,8 @@
     </section>
 
     <section class="contact-info">
-        <h2>Contact Information</h2>
+        <h2 class="en">Contact Information</h2>
+        <h2 class="ko">연락처</h2>
         <div class="icons">
             <a href="https://www.linkedin.com/in/soulcasey/" target="_blank">
                 <i class="fab fa-linkedin contact-icon"></i>

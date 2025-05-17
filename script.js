@@ -25,7 +25,7 @@ const closeBtn = document.getElementById('closeBtn');
 
 cards.forEach(card => {
 	card.addEventListener('click', () => {
-		const src = card.getAttribute('data-embed');
+		const src = card.getAttribute('data-embed') + '?lang=' + currentLang;
 		embed.src = src;
 
 		setTimeout(() => {
@@ -52,4 +52,19 @@ window.addEventListener('click', (e) => {
 	if (e.target === modal) {
 		closeBtn.click();
 	}
+});
+
+let currentLang = "en";
+
+document.getElementById('translate').addEventListener('change', function () {
+	const isKorean = this.checked;
+	currentLang = isKorean ? "ko" : "en";
+
+	// Show/hide language elements
+	document.querySelectorAll('.en').forEach(el => {
+		el.style.display = isKorean ? 'none' : 'block';
+	});
+	document.querySelectorAll('.ko').forEach(el => {
+		el.style.display = isKorean ? 'block' : 'none';
+	});
 });
