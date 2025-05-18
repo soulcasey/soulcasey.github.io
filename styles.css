@@ -1,5 +1,8 @@
 .ko {
 	display: none;
+	word-break: keep-all;
+	line-break: auto;
+	hyphens: none;
 }
 
 .en {
@@ -50,29 +53,13 @@ header img {
 
 header h1 {
 	margin-top: 20px;
+	line-height: 1.4;
 }
 
 header p {
 	font-size: 18px;
 	margin-top: 10px;
-}
-
-
-.changing-text-container {
-	display: inline-flex;
-	width: 120px;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-}
-
-.changing-text {
-	font-weight: bold;
-	font-size: 25px;
-	color: #00b7ff;
-	transition: opacity 0.5s ease-in-out;
-	white-space: nowrap;
+	line-height: 1.4;
 }
 
 
@@ -152,6 +139,7 @@ header p {
 	text-align: center;
 	font-size: 32px;
 	margin-bottom: 20px;
+	line-height: 1.4;
 }
 
 .project-grid {
@@ -186,10 +174,11 @@ header p {
 }
 
 .card-title {
-	margin-top: 0.5rem;
-	font-size: 1em;
+	margin-top: 8px;
+	font-size: 16px;
 	color: white;
 	text-align: center;
+	line-height: 1.4;
 }
 
 @media (max-width: 910px) {
